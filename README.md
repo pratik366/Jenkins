@@ -1,8 +1,3 @@
-# Jenkins_test
-Jenkins_test
-Username :- sai
-password :- 1
-
 # 🚀 Jenkins CI/CD with AWS EC2 and GitHub (Beginner Friendly Guide)
 
 This is a step-by-step guide for setting up a **CI/CD pipeline** using:
@@ -210,6 +205,15 @@ Save → exit → restart Apache:
 sudo systemctl restart apache2
 ```
 
+Use this command if not working
+```bash
+sudo chown -R ubuntu:ubuntu /var/www/html/webdirectory
+sudo chmod -R 755 /var/www/html/webdirectory
+```
+then execute
+```bash
+sudo systemctl restart apache2
+```
 Now open:
 👉 `http://<your-ec2-public-ip>/`
 
@@ -239,5 +243,3 @@ When that happens, update IP in:
 You’ve built a full **CI/CD pipeline** using **Jenkins + GitHub + AWS EC2 + Apache**.
 
 Whenever you push code → it goes live automatically. 🎯
-
----
